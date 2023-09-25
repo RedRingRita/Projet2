@@ -3,6 +3,27 @@
     font-family: 'Raleway', sans-serif;
 }
 
+/* header */
+
+.en-tete{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 68px;
+    padding: 0px, 50px, 0px, 50px;
+    
+}
+
+li:hover{
+    color: #0065FC;
+    border-top: solid #0065FC;
+}
+
+
 
 :root {
     --main-color: #0065FC;
