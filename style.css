@@ -1,27 +1,170 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
-/* header */
+/* -- header -- */
 
 .en-tete{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    /* border: solid green; */
 }
 
-ul{
+.logo{
+    height: 19px;
+    width: 61.09px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+nav{
+    /* border: solid orange; */
     display: flex;
-    flex-direction: row;
-    gap: 68px;
-    padding: 0px, 50px, 0px, 50px;
-    
 }
 
-li:hover{
-    color: #0065FC;
-    border-top: solid #0065FC;
+.navi{
+    display: flex;
+    gap: 68px;
+    /* border: solid red;     */
 }
+
+.navi li{
+    border-top: solid transparent 2px;
+    padding-top: 20px;
+    list-style-type: none;
+}
+
+.navi li:hover{
+    border-top: solid #0065FC 2px;
+    color: #0065FC;
+}
+
+/* -- header -- */
+
+/* -- recherche / filtre -- */
+
+.titre{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+h1{
+    font-size: 22px;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.form-recherche{
+    display: flex;
+    justify-content: space-between; /*Le formulaire de recherche prend tout l'espace alloué (ici 377px)*/
+    width: 377px;
+    height: 49px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.rechercher{
+    width: 132px;
+    height: 49px;
+    background-color: #0065FC;
+    border: none;
+    border-radius: 00px 15px 15px 0px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.champs{
+    border-top: solid 1px #fd0808;
+    border-bottom: solid 1px #F2F2F2;
+    border-left: none;
+    border-right: none;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.icone-localisation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 49px;
+    background-color: #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.filtres{
+    width: 758px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.filtre-eco{
+    border: solid #d9d9d9 2px;
+    border-radius: 25px;
+    width: 173px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.filtre-fam{
+    border: solid #d9d9d9 2px;
+    border-radius: 25px;
+    width: 134px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.filtre-rom{
+    border: solid #d9d9d9 2px;
+    border-radius: 25px;
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.filtre-pep{
+    border: solid #d9d9d9 2px;
+    border-radius: 25px;
+    width: 167px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.filtres div:hover{
+    background-color: #DEEBFF;
+}
+
+
+/* -- recherche / filtre -- */
 
 
 

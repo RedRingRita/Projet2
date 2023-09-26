@@ -19,17 +19,62 @@
     <div class="main-container">
         <header>
             <div class="en-tete">
-                <img src="images/logo/Booki.png" alt="Logo Booki">
+                <img class="logo"  src="images/logo/Booki.png" alt="Logo Booki">
                 <nav>
-                    <ul>
+                    <ul class="navi">
                         <li>Hébergements</li>
                         <li>Activités</li>
                     </ul>
                 </nav>
             </div>
-
         </header>
         <main>
+            <div class="titre"> 
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h2>En plein centre-ville ou en pleine nature</h2>
+            </div>
+
+            <!--Formulaire de recherche-->
+            <form class="form-recherche" action="" method="get">
+                <div class="icone-localisation">
+                    <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+                </div>
+                <input class="champs" type="search" name="localisation" >
+                <input class="rechercher" type="submit" value="Rechercher">
+            </form>
+
+            <!--Filtres-->
+            <ul class="filtres">
+                <li>
+                    Filtres
+                </li>
+
+                <li>
+                    <div class="filtre-eco" >
+                        <i class="fa-solid fa-money-bill-wave" style="color: #0065fc;"></i> Economique
+                    </div>
+                </li>
+
+                <li>
+                    <div class="filtre-fam" >
+                        <i class="fa-solid fa-person" style="color: #0065fc;"></i> Familial
+                    </div>
+                </li>
+
+                <li>
+                    <div class="filtre-rom" >
+                        <i class="fa-solid fa-heart" style="color: #0065fc;"></i> Romantique
+                    </div>
+                </li>
+
+                <li>
+                    <div class="filtre-pep" >
+                        <i class="fa-solid fa-fire" style="color: #0065fc;"></i> Nos pépites
+                    </div>
+                </li>
+            </ul>
+
+
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 
