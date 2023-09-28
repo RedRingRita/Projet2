@@ -20,13 +20,13 @@
         <header>
             <div class="en-tete">
                 <div class="logo">
-                    <img src="images/logo/Booki.png" alt="Logo Booki" width="61.09px" height="19px">
+                    <img src="images/logo/Booki.png" alt="Logo Booki">
                 </div>
                 <nav>
-                    <ul class="navi">
-                        <li>Hébergements</li>
-                        <li>Activités</li>
-                    </ul>
+                    <menu>
+                        <li> <a href="#hebergement-ancre">Hébergements</a></li>
+                        <li> <a href="#activite-ancre">Activités</a></li>
+                    </menu>
                 </nav>
             </div>
         </header>
@@ -39,7 +39,7 @@
                 </div>
     
                 <!--Formulaire de recherche-->
-                <form class="form-recherche" action="" method="get">
+                <form class="form-recherche" action="#" method="get">
                     <div class="icone-localisation">
                         <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
                     </div>
@@ -48,35 +48,29 @@
                 </form>
     
                 <!--Filtres-->
-                <ul class="filtres">
-                    <li>
-                        Filtres
-                    </li>
-    
-                    <li>
-                        <div class="filtre-eco" >
+                <div class="filtres">
+                    <div>
+                        <p>Filtres</p>
+                    </div>
+                    
+                    <div class="filtre-bloc-bouton">
+                        <p>
                             <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i> Économique
-                        </div>
-                    </li>
-    
-                    <li>
-                        <div class="filtre-fam" >
+                        </p>
+        
+                        <p>
                             <i class="fa-solid fa-person" aria-hidden="true"></i> Familial
-                        </div>
-                    </li>
-    
-                    <li>
-                        <div class="filtre-rom" >
+                        </p>
+        
+                        <p>
                             <i class="fa-solid fa-heart" aria-hidden="true"></i> Romantique
-                        </div>
-                    </li>
-    
-                    <li>
-                        <div class="filtre-pep" >
+                        </p>
+        
+                        <p>
                             <i class="fa-solid fa-fire" aria-hidden="true"></i> Nos pépites
-                        </div>
-                    </li>
-                </ul>
+                        </p>
+                    </div>
+                </div>
 
                 <div class="infobar">
                     <div class="iconeinfo">
@@ -86,11 +80,12 @@
                 </div>
             </section>
 
+                <!-- Hébergements et populaires-->
 
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <div class="hebergements-title">
-                        <h2 class="section-title">Hébergements à Marseille</h2>
+                        <h2 class="section-title" id="hebergement-ancre">Hébergements à Marseille</h2>
                     </div>
 
                     <div class="hebergement-bloc1">
@@ -287,39 +282,46 @@
                     </div>
                 </section>
             </div>
+
+            <!-- Activités -->
+
             <section class="activites">
                 <div class="activite-title">
-                    <h2 class="section-title">Activités à Marseille</h2>
+                    <h2 class="section-title" id="activite-ancre">Activités à Marseille</h2>
                 </div>
-
                 <div class="bloc-cards">
-                    <article class="activite-card">
-                        <img src="images/activites/reno-laithienne.jpg" alt="Image d'un port avec des bateaux amarés">
-                        <div class="activite-text">
-                            <h3>Vieux-port</h3>
-                        </div>
-                    </article>
-    
-                    <article class="activite-card">
-                        <img src="images/activites/paul-hermann.jpg" alt="Image d'un port avec des bateaux amarés">
-                        <div class="activite-text">
-                            <h3>Fort de Pomègues</h3>
-                        </div>
-                    </article>
-    
-                    <article class="activite-card">
-                        <img src="images/activites/kilyan-sockalingum.jpg" alt="Image d'un port avec des bateaux amarés">
-                        <div class="activite-text">
-                            <h3>Parc national des Calanques</h3>
-                        </div>
-                    </article>
-    
-                    <article class="activite-card">
-                        <img src="images/activites/florian-wehde.jpg" alt="Image d'un port avec des bateaux amarés">
-                        <div class="activite-text">
-                            <h3>Notre-Dame-de-la-Garde</h3>
-                        </div>
-                    </article>
+                    <a href="#">
+                        <article class="activite-card">
+                            <img src="images/activites/reno-laithienne.jpg" alt="Image d'un port avec des bateaux amarés">
+                            <div class="activite-text">
+                                <h3>Vieux-port</h3>
+                            </div>
+                        </article>
+                    </a>    
+                    <a href="#">
+                        <article class="activite-card">
+                            <img src="images/activites/paul-hermann.jpg" alt="Image d'un port avec des bateaux amarés">
+                            <div class="activite-text">
+                                <h3>Fort de Pomègues</h3>
+                            </div>
+                        </article>
+                    </a>                    
+                    <a href="#">
+                        <article class="activite-card">
+                            <img src="images/activites/kilyan-sockalingum.jpg" alt="Image d'un port avec des bateaux amarés">
+                            <div class="activite-text">
+                                <h3>Parc national des Calanques</h3>
+                            </div>
+                        </article>
+                    </a>    
+                    <a href="#">
+                        <article class="activite-card">
+                            <img src="images/activites/florian-wehde.jpg" alt="Image d'un port avec des bateaux amarés">
+                            <div class="activite-text">
+                                <h3>Notre-Dame-de-la-Garde</h3>
+                            </div>
+                        </article>
+                    </a>
                 </div>
             </section>
         </main>

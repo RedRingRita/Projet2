@@ -15,37 +15,40 @@
 }
 
 .logo{
-    width: 161.09px;
-    height: 79px;
     display: flex;
     align-items: center;
+    width: 161.09px;
+    height: 79px;
+    /* border: solid purple; */
+}
+
+.logo img{
+    width: 61.09px;
+    height: 19px;
     /* border: solid red; */
 }
 
-nav{
-    /* border: solid orange; */
-    display: flex;
-}
-
-.navi{
+menu{
     display: flex;
     gap: 68px;
-    /* border: solid red;     */
+    /* border: solid red; */
 }
 
 li{
     list-style-type: none;
 }
 
-.navi li{
+menu li{
     border-top: solid transparent 2px;
     padding-top: 16px;
 }
 
-.navi li:hover{
+menu li:hover{
     border-top: solid #0065FC 2px;
     color: #0065FC;
 }
+
+/* -- info group -- */
 
 .info-group{
     display: flex;
@@ -53,8 +56,6 @@ li{
     gap: 35px;
     /* border: solid red; */
 }
-
-/* -- recherche -- */
 
 main{
     margin-top: 35px;
@@ -71,92 +72,88 @@ main{
 }
 
 h1{
-    font-size: 22px;
+    font-size: 1.2em;
 }
 
 h2{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1em;
 }
+
+/* -- recherche -- */
 
 .form-recherche{
     display: flex;
-    justify-content: space-between; /*Le formulaire de recherche prend tout l'espace alloué (ici 377px)*/
     width: 377px;
     height: 49px;
-}
-
-.rechercher{
-    width: 132px;
-    height: 49px;
-    background-color: #0065FC;
-    border: none;
-    border-radius: 00px 15px 15px 0px;
-    color: white;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.champs{
-    border-top: solid 1px #fd0808;
-    border-bottom: solid 1px #F2F2F2;
-    border-left: none;
-    border-right: none;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
+    border: solid #F2F2F2 1px;
+    border-radius: 15px;
 }
 
 .icone-localisation{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     width: 50px;
-    height: 49px;
     background-color: #f2f2f2;
     border-radius: 15px 0px 0px 15px;
+}
+
+.champs{
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+}
+
+.rechercher{
+    width: 132px;
+    background-color: #0065FC;
+    border: solid #0065FC 1px;
+    border-radius: 00px 15px 15px 0px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1em;
+    flex-shrink: 0;
 }
 
 /* --Filtres -- */
 
 .filtres{
-    width: 758px;
+    width: 55%;
     height: 50px;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1em;
     margin-bottom: 25px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    gap: 15px;
+    /* border: solid red; */
 }
 
-.filtre-eco{
-    width: 173px;
+.filtre-bloc-bouton{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    /* border: solid orange; */
 }
 
-.filtre-fam{
-    width: 134px;
-}
-
-.filtre-rom{
-    width: 170px;
-}
-
-.filtre-pep{
-    width: 167px;
-}
-
-.filtre-eco, .filtre-fam, .filtre-pep, .filtre-rom{
+.filtre-bloc-bouton p{
+    width: 100%;
     height: 50px;
     border: solid #d9d9d9 2px;
     border-radius: 25px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10px;
+
 }
 
-.filtres div:hover{
+.filtre-bloc-bouton p:hover{
     background-color: #DEEBFF;
 }
 
@@ -182,7 +179,7 @@ h2{
 
 .infobar p{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 /* --base de code -- */
@@ -198,6 +195,7 @@ h2{
 }
 
 body {
+    
     display: flex;
     justify-content: center;
 }
@@ -205,7 +203,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0px 50px;
     box-sizing: border-box;
     border: solid palevioletred;
 }
@@ -217,7 +215,7 @@ a {
 
 .section-title {
     margin: 0;
-    font-size: 22px;
+    font-size: 1.2em;
     font-weight: 700;
 }
 
@@ -233,7 +231,7 @@ a {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .euro {
@@ -245,6 +243,7 @@ a {
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -261,6 +260,7 @@ a {
 }
 
 /****** Hebergements ***********/
+
 .hebergements {
     width: 65%;
     display: flex;
@@ -297,7 +297,7 @@ a {
 
 .section-plus{
     margin: 0;
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight: 700;
 }
 
@@ -354,15 +354,21 @@ a {
     flex-direction: column;
     gap: 30px;
     padding: 30px;
+    border: solid orange;
 }
 
 .bloc-cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 400px; */
+    /* width: 100%; */
+    /* display: flex; */
     gap: 30px;
+    border: solid red;
 }
 
 .activite-card{
-    width: 297.5px;
+    width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 20px;
@@ -400,7 +406,7 @@ footer{
 }
 
 li b{
-    font-size: 18px;
+    font-size: 1;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -408,6 +414,22 @@ li b{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filtres{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: 70%;
+        /* border: solid blue; */
+    }
+
+    .activite-card{
+        width: 100%;
+    }
+
+    .activite-card img{
+        height: 200px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -442,5 +464,53 @@ li b{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    .main-container{
+        padding: 0;
+    }
+    .en-tete{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        height: 115px;
+        /* border: solid green; */
+    }
+    .logo{
+        justify-content: center;
+        padding: 30px;
+        /* border: solid red; */
+    }
+
+    nav{
+        width: 100%;
+        /* border: solid rgb(97, 24, 146); */
+
+    }
+
+    menu{
+        display: flex;
+        gap: 0;
+        /* border: solid lightblue; */
+    }
+
+    menu li{
+        padding-top: 0;
+        padding-bottom: 15px;
+        width: 100%;
+        text-align: center;
+        border-top: none;
+        border-bottom: solid #d9d9d9 2px;
+        /* border: solid orange; */
+    }
+
+    menu li:hover{
+        border-top: none;
+        border-bottom: solid #0065FC 2px;
+        color: #0065FC;
+    }
+
+    main{
+        padding: 0 30px;
+    }
     /* ... */
 }
