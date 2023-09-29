@@ -17,6 +17,8 @@
 
 <body>
     <div class="main-container">
+
+        <!--Header-->
         <header>
             <div class="en-tete">
                 <div class="logo">
@@ -41,10 +43,13 @@
                 <!--Formulaire de recherche-->
                 <form class="form-recherche" action="#" method="get">
                     <div class="icone-localisation">
-                        <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                     </div>
                     <input class="champs" type="search" name="localisation" >
                     <input class="rechercher" type="submit" value="Rechercher">
+                    <div class="icone-rechercher">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 </form>
     
                 <!--Filtres-->
@@ -289,7 +294,7 @@
                 <div class="activite-title">
                     <h2 class="section-title" id="activite-ancre">Activités à Marseille</h2>
                 </div>
-                <div class="bloc-cards">
+                <div class="bloc-activite-cards">
                     <a href="#">
                         <article class="activite-card">
                             <img src="images/activites/reno-laithienne.jpg" alt="Image d'un port avec des bateaux amarés">
@@ -326,6 +331,7 @@
             </section>
         </main>
 
+        <!--Footer-->
         <footer>
             <div class="liste-footer">
                 <ul>
