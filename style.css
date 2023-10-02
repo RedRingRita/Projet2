@@ -69,7 +69,7 @@ h1{
     font-size: 1.2em;
 }
 
-h2{
+.infobar h2{
     font-weight: 400;
     font-size: 1em;
 }
@@ -88,7 +88,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
+    flex-shrink: 0; /* évite "l'écrasement" de l'icone quand l'écran est plus petit */
     width: 50px;
     background-color: #f2f2f2;
     border-radius: 15px 0px 0px 15px;
@@ -139,7 +139,6 @@ h2{
     width: 100%;
     display: flex;
     gap: 10px;
-    flex-shrink: 0;
 }
 
 .filtre-bloc-bouton p{
@@ -151,6 +150,7 @@ h2{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    white-space: nowrap; /*évite les retour à la ligne automatique*/
     padding: 4px 19px;
     gap: 10px;
 }
@@ -199,12 +199,12 @@ h2{
 body {    
     display: flex;
     justify-content: center;
-    border: solid red;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0px 50px;
     box-sizing: border-box;
 }
@@ -366,6 +366,9 @@ a {
 
 .activite-text{
     padding: 20px 19px 20px 19px;
+    height: 59px;
+    display: flex;
+    align-items: center;
 }
 
 .activite-card img{
@@ -383,7 +386,7 @@ footer{
 }
 
 .liste-footer{
-    width: 446.67px;
+    width: 100%;
     padding: 20px;
 }
 
@@ -407,7 +410,6 @@ li b{
         align-items: flex-start;
         height: auto;
         width: 70%;
-        /* border: solid blue; */
     }
 
     .activite-card{
@@ -578,7 +580,6 @@ li b{
     /* -- activités -- */
 
     .activites{
-        /* border: solid red; */
         padding-top: 0;
     }
 
@@ -587,9 +588,20 @@ li b{
         flex-direction: column;
     }
 
+    .activite-card img{
+        height: 141px;
+    }
+
     /* -- footer -- */
 
     footer{
+        flex-direction: column;
+    }
+}
+/* ExtraSmall devices (phones, less than 385px) */
+@media (max-width: 384px) {
+    .filtre-bloc-bouton{
+        display: flex;
         flex-direction: column;
     }
 }    
